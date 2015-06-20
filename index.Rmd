@@ -1,0 +1,115 @@
+---
+title       : Developing Data Products
+subtitle    : Course Project
+author      : nuneshub
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+ext_widgets : {rCharts: ["libraries/morris"]}
+knit        : slidify::knit2slides
+---
+
+
+
+```{r setup,echo=FALSE}
+library(knitr)
+options(width = 100)
+opts_chunk$set(message=F,error=F,warning=F,comment=NA,
+               tidy=F,cache.path='.cache/',fig.path='fig/')
+
+options(xtable.type = 'html')
+knit_hooks$set(inline = function(x) {
+    if(is.numeric(x)) {
+        round(x, getOption('digits'))
+    } else {
+        paste(as.character(x), collapse = ', ')
+    }
+})
+```
+
+
+```{r dataProcessing,echo=FALSE,message=FALSE}
+# Load file for processing data
+source("slidifyHelper.R")
+```
+
+
+
+## Shiny Application Summary
+
+* Loads financial markets data of equity indices using the R package `quantmod`.
+* User visualise data in interactive plot and may switch to data set tabs to inspect data.
+
+### Inputs: Indices & Time range
+
+* Three equity indices: NASDAQ 100 (US), FTSE 100 (UK) and CAC 40 (France).
+* Time range starts on 2013-12-31, in order to avoid heaviness dealing with very long series. 
+
+### Outputs: Main plot & Data sets
+
+* Main plot using `rCharts` / plotting package `morris`.
+* Data sets from quantmod for the selected indices presented in different tabs using `dTable`.
+
+#### Link to Shiny App: <https://nuneshub.shinyapps.io/project>
+
+--- .class #id 
+
+
+
+
+## Shiny App Layout
+
+```{r, echo=FALSE,results='asis'}
+cat('<iframe src="fig/ShinyAppLayout65pc.bmp" width=100%, height=600></iframe>')
+```
+
+--- .class #id 
+
+
+
+
+## OUTPUT: Main Plot
+
+### Example for indices: NASDAQ 100 (code NDX) and CAC 40 (code FCHI)
+
+```{r, echo=FALSE,results='asis'}
+p <- mPlot(x="date",y=c(colnames(dat)[5],colnames(dat)[11]),
+           data=dat,type="Line")
+p$set(pointSize=0,lineWidth=3)
+p$set(hideHover="auto")
+p$save("fig/mainPlot.html",cdn=TRUE)
+cat('<iframe src="fig/mainPlot.html" width=100%, height=600></iframe>')
+```
+
+--- .class #id 
+
+
+
+
+## OUTPUT: Data Sets
+
+### Example for the NASDAQ data (code NDX)
+
+```{r, echo=FALSE,results='asis'}
+dTable(dat1,sPaginationType="full_numbers")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
