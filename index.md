@@ -43,7 +43,7 @@ knit        : slidify::knit2slides
 
 
 
-## Shiny App Layout 65 fig & lectures
+## Shiny App Layout
 
 <img class=center src=fig/ShinyAppLayout65pc.bmp height=550>
 
