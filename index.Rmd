@@ -60,13 +60,36 @@ source("slidifyHelper.R")
 
 
 
-## Shiny App Layout
+
+
+
+
+
+## Shiny App Layout 54
 
 ```{r, echo=FALSE,results='asis'}
-cat('<iframe src="fig/ShinyAppLayout65pc.bmp" width=100%, height=600></iframe>')
+cat('<iframe src="fig/ShinyAppLayout54pc.bmp" width=100%, height=600></iframe>')
 ```
 
 --- .class #id 
+
+
+## Shiny App Layout 54 img
+
+<img src=assets/img/ShinyAppLayout54pc.bmp style="width: 750px">
+
+--- .class #id 
+
+
+## Shiny App Layout 65 fig & lectures
+
+<img class=center src=fig/ShinyAppLayout65pc.bmp height=550>
+
+--- .class #id 
+
+
+
+
 
 
 
