@@ -10,6 +10,7 @@
 
 ##### Link to Slidify Presentation
 
+<http://nuneshub.github.io/9DevelopingDataProducts/index.html>
 
 
 #### Project guidelines

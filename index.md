@@ -43,34 +43,11 @@ knit        : slidify::knit2slides
 
 
 
-
-
-
-
-
-## Shiny App Layout 54
-
-<iframe src="fig/ShinyAppLayout54pc.bmp" width=100%, height=600></iframe>
-
---- .class #id 
-
-
-## Shiny App Layout 54 img
-
-<img src=assets/img/ShinyAppLayout54pc.bmp style="width: 750px">
-
---- .class #id 
-
-
 ## Shiny App Layout 65 fig & lectures
 
 <img class=center src=fig/ShinyAppLayout65pc.bmp height=550>
 
 --- .class #id 
-
-
-
-
 
 
 
@@ -90,7 +67,7 @@ knit        : slidify::knit2slides
 
 ### Example for the NASDAQ data (code NDX)
 
-<iframe src=' assets/fig/unnamed-chunk-3-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datatables ' id=iframe- chart1d0823ab4f57 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/unnamed-chunk-2-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datatables ' id=iframe- charta087ac72a21 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 
 
